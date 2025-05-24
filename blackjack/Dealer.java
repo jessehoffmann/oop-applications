@@ -13,6 +13,6 @@ public class Dealer extends Player {
 
     @Override
     public boolean makeMove() {
-        return this.getHand().getScore() < this.targetScore;
+        return this.getHand().getTotal() < this.targetScore;
     }
 }

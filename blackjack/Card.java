@@ -13,5 +13,18 @@ public class Card {
     
     public int getValue() {
         return value;
-    };
+    }
+
+    @Override
+    public String toString() {
+        String valueStr;
+        switch (value) {
+            case 11: valueStr = "A"; break;
+            case 12: valueStr = "J"; break;
+            case 13: valueStr = "Q"; break;
+            case 14: valueStr = "K"; break;
+            default: valueStr = String.valueOf(value);
+        }
+        return valueStr + suit.toString();
+    }
 }

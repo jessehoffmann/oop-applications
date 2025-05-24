@@ -6,4 +6,12 @@ abstract class Player {
     }
 
     abstract boolean makeMove();
+
+    public Hand getHand() {
+        return hand;
+    }
+
+    public void dealCard(Card card) {
+        hand.dealCard(card);
+    }
 }
